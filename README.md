@@ -172,7 +172,7 @@ ontop-med/
 ### 1. Clone and configure environment
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ruboon-dej/ontop-med.git
 cd ontop-med
 cp .env.example .env
 # Edit .env with your database credentials and API keys
