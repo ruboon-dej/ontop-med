@@ -1,0 +1,17 @@
+[PrefixDeclaration]
+:           http://ontopmed.example.org/
+owl:        http://www.w3.org/2002/07/owl#
+idmp:       https://spec.pistoiaalliance.org/idmp/ontology/ISO/
+xsd:        http://www.w3.org/2001/XMLSchema#
+
+[MappingDeclaration] @collection [[
+
+mappingId   drugs-to-MedicinalProduct
+target      :drugs/{id} a idmp:MedicinalProduct ; idmp:hasName {drug_name}^^xsd:string ; idmp:hasATCCode {atc_code}^^xsd:string .
+source      SELECT id, drug_name, atc_code FROM drugs
+
+mappingId   substances-to-Substance
+target      :substances/{id} a idmp:Substance ; idmp:hasName {substance_name}^^xsd:string .
+source      SELECT id, substance_name FROM substances
+
+]]

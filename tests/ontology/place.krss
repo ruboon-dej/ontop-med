@@ -1,0 +1,14 @@
+(define-primitive-concept Place)
+(define-primitive-concept Activity)
+
+(define-concept ActivePlace
+  (and Place (some canSail Kayaking) (some canWalk Trekking)))
+
+(define-concept Mangrove
+  (and Place (some canWalk Trekking)))
+
+(define-concept Kayaking
+  (and Activity))
+
+(define-concept Trekking
+  (and Activity))

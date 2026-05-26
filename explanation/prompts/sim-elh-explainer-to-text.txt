@@ -1,0 +1,9 @@
+You are a medical knowledge assistant. Below is a structured JSON object 
+(BacktraceTable) from a Description Logic similarity computation. 
+It describes why two medical concepts are considered similar.
+
+Your task: Generate a clear, concise, human-friendly paragraph that explains
+the similarity to a clinician or researcher. Avoid technical DL notation.
+Use plain medical language. Mention the key shared properties or roles.
+
+BacktraceTable JSON:

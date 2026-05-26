@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontopmed.example.org/med#"
+     xml:base="http://ontopmed.example.org/med"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://ontopmed.example.org/med"/>
+
+    <owl:Class rdf:about="http://ontopmed.example.org/med#Drug"/>
+    <owl:Class rdf:about="http://ontopmed.example.org/med#NSAID">
+        <rdfs:subClassOf rdf:resource="http://ontopmed.example.org/med#Drug"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://ontopmed.example.org/med#Analgesic">
+        <rdfs:subClassOf rdf:resource="http://ontopmed.example.org/med#Drug"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://ontopmed.example.org/med#Aspirin">
+        <rdfs:subClassOf rdf:resource="http://ontopmed.example.org/med#NSAID"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://ontopmed.example.org/med#Ibuprofen">
+        <rdfs:subClassOf rdf:resource="http://ontopmed.example.org/med#NSAID"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://ontopmed.example.org/med#Naproxen">
+        <rdfs:subClassOf rdf:resource="http://ontopmed.example.org/med#NSAID"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://ontopmed.example.org/med#Paracetamol">
+        <rdfs:subClassOf rdf:resource="http://ontopmed.example.org/med#Analgesic"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://ontopmed.example.org/med#Metformin">
+        <rdfs:subClassOf rdf:resource="http://ontopmed.example.org/med#Drug"/>
+    </owl:Class>
+
+</rdf:RDF>
